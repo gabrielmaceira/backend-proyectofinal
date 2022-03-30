@@ -50,7 +50,7 @@ module.exports = class Carritos {
       const foundCart = parsedData.find(cart => cart.id === providedId)
 
       if (foundCart) {
-        return foundCart
+        return foundCart.productos
       }
       else {
         throw new Error("El id no existe")
@@ -116,11 +116,19 @@ module.exports = class Carritos {
       let cartPosition = allCarts.findIndex(cart => cart.id === cartId)
 
       if (cartPosition < 0) {
-        throw new Error("El id ingresado no existe")
+        throw new Error("El id del carrito ingresado no existe")
       }
       else {
-        allCarts[cartPosition].productos = allCarts[cartPosition].productos.filter(el => el.id !== itemId)
-        await fs.promises.writeFile(this.fileName, JSON.stringify(allCarts))
+        const filteredProducts = allCarts[cartPosition].productos.filter(el => el.id !== itemId)
+
+        if (filteredProducts.length === allCarts[cartPosition].productos.length) {
+          throw new Error("El producto no esta en el carrito")
+        }
+        else {
+          allCarts[cartPosition].productos = filteredProducts
+          await fs.promises.writeFile(this.fileName, JSON.stringify(allCarts))
+        }
+        
       }
     }
     catch (err) {

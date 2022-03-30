@@ -68,7 +68,13 @@ module.exports = class Productos {
       const parsedData = JSON.parse(fileData)
 
       const foundItem = parsedData.find(item => item.id === providedId)
-      return foundItem ? foundItem : null
+
+      if (foundItem) {
+        return foundItem
+      }
+      else {
+        throw new Error("El id no existe")
+      }
     }
     catch (err) {
       throw new Error(err)

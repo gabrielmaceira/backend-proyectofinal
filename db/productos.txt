@@ -1,1 +1,1 @@
-[]
+[{"id":1,"timestamp":1648678480163,"nombre":"algo","descripcion":"otra","codigo":"oinoin","foto":"https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Viking-512.png","precio":120,"stock":10},{"id":2,"timestamp":1648678480667,"nombre":"algo","descripcion":"otra","codigo":"oinoin","foto":"https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Viking-512.png","precio":120,"stock":10}]
