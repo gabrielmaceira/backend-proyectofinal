@@ -7,7 +7,7 @@ const app = express()
 const route_products = Router()
 const route_cart = Router()
 
-const PORT = process.env.NODE_ENV === "production" ? process.env.PORT : 8080
+const PORT = process.env.ENVIRONMENT === "production" ? process.env.PORT : 8080
 
 const server = app.listen(PORT, () => {
     console.log(`Servidor http escuchando en el puerto ${server.address().port}`)
