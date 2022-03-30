@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "39a520c4-257f-4f5b-ba26-76316c68115e",
+		"name": "Primera Entrega glitch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/productos",
+			"item": [
+				{
+					"name": "Productos todos o por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maceira-proyecto-final.glitch.me/api/productos",
+							"protocol": "https",
+							"host": [
+								"maceira-proyecto-final",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"api",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"item\": {\r\n        \"nombre\": \"algo\",\r\n        \"descripcion\": \"otra\",\r\n        \"codigo\": \"oinoin\",\r\n        \"foto\": \"https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Viking-512.png\",\r\n        \"precio\": 120,\r\n        \"stock\": 10\r\n    },\r\n    \"administrador\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maceira-proyecto-final.glitch.me/api/productos",
+							"protocol": "https",
+							"host": [
+								"maceira-proyecto-final",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"api",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar producto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"item\": {\r\n        \"nombre\": \"asdasdasd\",\r\n        \"stock\": 1000\r\n    },\r\n    \"administrador\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maceira-proyecto-final.glitch.me/api/productos/1",
+							"protocol": "https",
+							"host": [
+								"maceira-proyecto-final",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"api",
+								"productos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar producto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"administrador\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maceira-proyecto-final.glitch.me/api/productos/2",
+							"protocol": "https",
+							"host": [
+								"maceira-proyecto-final",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"api",
+								"productos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/api/carrito",
+			"item": [
+				{
+					"name": "Crear carrito",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"nombre\": \"algo\",\r\n \"descripcion\": \"otra\",\r\n \"codigo\": \"oinoin\",\r\n \"foto\": \"https://cdn3.iconfinder.com/data/icons/fantasy-and-role-play-game-adventure-quest/512/Viking-512.png\",\r\n \"precio\": 120,\r\n \"stock\": 10,\r\n \"administrador\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maceira-proyecto-final.glitch.me/api/carrito",
+							"protocol": "https",
+							"host": [
+								"maceira-proyecto-final",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"api",
+								"carrito"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar carrito",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"administrador\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maceira-proyecto-final.glitch.me/api/carrito/3",
+							"protocol": "https",
+							"host": [
+								"maceira-proyecto-final",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"api",
+								"carrito",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Prods en carrito",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://maceira-proyecto-final.glitch.me/api/carrito/1/productos",
+							"protocol": "https",
+							"host": [
+								"maceira-proyecto-final",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"api",
+								"carrito",
+								"1",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar item a carrito",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"item\": {\r\n        \"id\": 1\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://maceira-proyecto-final.glitch.me/api/carrito/1/productos",
+							"protocol": "https",
+							"host": [
+								"maceira-proyecto-final",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"api",
+								"carrito",
+								"1",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Borrar Item en carrito",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://maceira-proyecto-final.glitch.me/api/carrito/1/productos/2",
+							"protocol": "https",
+							"host": [
+								"maceira-proyecto-final",
+								"glitch",
+								"me"
+							],
+							"path": [
+								"api",
+								"carrito",
+								"1",
+								"productos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
