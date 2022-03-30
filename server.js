@@ -15,8 +15,8 @@ const server = app.listen(PORT, () => {
 
 server.on("error", error => console.log(`Error en servidor ${error}`))
 
-const APIPRODROUTE = '/api/productos'
-const APICARTROUTE = '/api/carrito'
+const APIPRODROUTE = '/productos'
+const APICARTROUTE = '/carrito'
 
 app.use(APIPRODROUTE, route_products)
 app.use(APICARTROUTE, route_cart)

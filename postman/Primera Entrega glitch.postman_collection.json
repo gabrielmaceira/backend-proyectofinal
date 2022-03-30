@@ -14,7 +14,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://maceira-proyecto-final.glitch.me/api/productos",
+							"raw": "https://maceira-proyecto-final.glitch.me/productos",
 							"protocol": "https",
 							"host": [
 								"maceira-proyecto-final",
@@ -22,7 +22,6 @@
 								"me"
 							],
 							"path": [
-								"api",
 								"productos"
 							]
 						}
@@ -44,7 +43,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://maceira-proyecto-final.glitch.me/api/productos",
+							"raw": "https://maceira-proyecto-final.glitch.me/productos",
 							"protocol": "https",
 							"host": [
 								"maceira-proyecto-final",
@@ -52,7 +51,6 @@
 								"me"
 							],
 							"path": [
-								"api",
 								"productos"
 							]
 						}
@@ -74,7 +72,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://maceira-proyecto-final.glitch.me/api/productos/1",
+							"raw": "https://maceira-proyecto-final.glitch.me/productos/1",
 							"protocol": "https",
 							"host": [
 								"maceira-proyecto-final",
@@ -82,7 +80,6 @@
 								"me"
 							],
 							"path": [
-								"api",
 								"productos",
 								"1"
 							]
@@ -105,7 +102,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://maceira-proyecto-final.glitch.me/api/productos/2",
+							"raw": "https://maceira-proyecto-final.glitch.me/productos/2",
 							"protocol": "https",
 							"host": [
 								"maceira-proyecto-final",
@@ -113,7 +110,6 @@
 								"me"
 							],
 							"path": [
-								"api",
 								"productos",
 								"2"
 							]
@@ -141,7 +137,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://maceira-proyecto-final.glitch.me/api/carrito",
+							"raw": "https://maceira-proyecto-final.glitch.me/carrito",
 							"protocol": "https",
 							"host": [
 								"maceira-proyecto-final",
@@ -149,7 +145,6 @@
 								"me"
 							],
 							"path": [
-								"api",
 								"carrito"
 							]
 						}
@@ -171,7 +166,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://maceira-proyecto-final.glitch.me/api/carrito/3",
+							"raw": "https://maceira-proyecto-final.glitch.me/carrito/1",
 							"protocol": "https",
 							"host": [
 								"maceira-proyecto-final",
@@ -179,9 +174,8 @@
 								"me"
 							],
 							"path": [
-								"api",
 								"carrito",
-								"3"
+								"1"
 							]
 						}
 					},
@@ -193,7 +187,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://maceira-proyecto-final.glitch.me/api/carrito/1/productos",
+							"raw": "https://maceira-proyecto-final.glitch.me/carrito/1/productos",
 							"protocol": "https",
 							"host": [
 								"maceira-proyecto-final",
@@ -201,7 +195,6 @@
 								"me"
 							],
 							"path": [
-								"api",
 								"carrito",
 								"1",
 								"productos"
@@ -225,7 +218,7 @@
 							}
 						},
 						"url": {
-							"raw": "https://maceira-proyecto-final.glitch.me/api/carrito/1/productos",
+							"raw": "https://maceira-proyecto-final.glitch.me/carrito/1/productos",
 							"protocol": "https",
 							"host": [
 								"maceira-proyecto-final",
@@ -233,7 +226,6 @@
 								"me"
 							],
 							"path": [
-								"api",
 								"carrito",
 								"1",
 								"productos"
@@ -248,7 +240,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://maceira-proyecto-final.glitch.me/api/carrito/1/productos/2",
+							"raw": "https://maceira-proyecto-final.glitch.me/carrito/1/productos/1",
 							"protocol": "https",
 							"host": [
 								"maceira-proyecto-final",
@@ -256,11 +248,10 @@
 								"me"
 							],
 							"path": [
-								"api",
 								"carrito",
 								"1",
 								"productos",
-								"2"
+								"1"
 							]
 						}
 					},
