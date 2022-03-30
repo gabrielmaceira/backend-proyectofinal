@@ -1,0 +1,25 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGREGAR O MODIFICAR ITEMS</title>
+</head>
+
+<body>
+    <h1>
+        AGREGAR ITEMS
+    </h1>
+    <form action="/api/productos" method="POST">
+        <label>Titulo</label>
+        <input type="text" name="title" />
+        <label>Precio</label>
+        <input type="number" name="price" />
+        <label>Thumbnail</label>
+        <input type="url" name="thumbnail"/>
+        <input type="submit" />
+    </form>
+</body>
+
+</html>
